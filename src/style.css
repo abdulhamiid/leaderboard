@@ -19,22 +19,21 @@ main {
 }
 
 #showcase button,
-form button {
+#form button {
   background-color: #fff;
   border: solid 2px #000;
   box-shadow: 2px 2px #000;
   font-family: inherit;
-
-}
-
-#showcase button:hover,
-form button:hover {
-  cursor:pointer
 }
 
 #showcase button {
   margin-left: 10px;
   padding: 4px 10px;
+}
+
+#showcase button:hover,
+#form button:hover {
+  cursor: pointer;
 }
 
 .container {
@@ -45,7 +44,7 @@ form button:hover {
   gap: 20px;
 }
 
-form {
+#form {
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -53,20 +52,21 @@ form {
   margin-top: 20px;
 }
 
-form input {
+#form input {
   padding: 10px;
   font-size: 16px;
   border: 2px solid #000;
 }
-form input:focus {
+
+#form input:focus {
   outline: none;
 }
 
-form input::placeholder {
-  color: #000
+#form input::placeholder {
+  color: #000;
 }
 
-form button[type="submit"]{
+#form button[type="submit"] {
   width: 35%;
   flex-direction: row-reverse;
   padding: 4px 10px;
@@ -85,6 +85,7 @@ ul {
   border: 2px solid #000;
   margin-top: 20px;
 }
+
 li:nth-child(even) {
   background-color: #ccc;
 }
