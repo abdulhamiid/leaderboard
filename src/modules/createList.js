@@ -1,4 +1,4 @@
-import scorePlaceholder from './variables.js';
+import { scorePlaceholder } from './variables.js';
 
 const createList = (prop) => {
   scorePlaceholder.innerHTML += `
