@@ -53,6 +53,7 @@ main {
 }
 
 #form input {
+  font-family: inherit;
   padding: 10px;
   font-size: 16px;
   border: 2px solid #000;
@@ -88,4 +89,36 @@ ul {
 
 li:nth-child(even) {
   background-color: #ccc;
+}
+
+
+@media (max-width: 768px ) {
+  .container {
+    width: 95%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    position: relative;
+  } 
+
+  #showcase {
+    position: relative;
+    margin-top: 240px;
+    text-align: center;
+  }
+
+  main div:nth-child(2) {
+        position:absolute;
+    width: 95%;
+    margin: auto;
+
+  }
+
+  #form, ul {
+    width: 100%;
+  }
+
+  h1 {
+    margin: 20px auto;
+    text-align: center;
+  }
 }
