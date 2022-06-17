@@ -91,14 +91,13 @@ li:nth-child(even) {
   background-color: #ccc;
 }
 
-
-@media (max-width: 768px ) {
+@media (max-width: 768px) {
   .container {
     width: 95%;
     margin: auto;
     grid-template-columns: 1fr;
     position: relative;
-  } 
+  }
 
   #showcase {
     position: relative;
@@ -107,13 +106,13 @@ li:nth-child(even) {
   }
 
   main div:nth-child(2) {
-        position:absolute;
+    position: absolute;
     width: 95%;
     margin: auto;
-
   }
 
-  #form, ul {
+  #form,
+  ul {
     width: 100%;
   }
 
