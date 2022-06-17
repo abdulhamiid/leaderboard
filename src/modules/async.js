@@ -1,6 +1,6 @@
 import fetchData from './fetch.js';
 
-async function displayScore() {
+const displayScore = async () => {
   // Execution
   await fetchData();
 }
