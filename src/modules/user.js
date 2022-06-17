@@ -1,4 +1,4 @@
-import { name, score } from "./variables";
+import { name, score } from './variables.js';
 
 const getUser = () => {
   // get user input from the form
@@ -8,16 +8,10 @@ const getUser = () => {
   // user input object
   const userInput = {
     user: userName,
-    score: userScore
-  }
+    score: userScore,
+  };
   // console.log(userInput)
   return userInput;
-}
-
-const refresh = (prop1, prop2) => {
-  prop1.value = '';
-  prop2.value = '';
-}
-
+};
 
 export default getUser;

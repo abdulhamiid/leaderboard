@@ -1,10 +1,8 @@
-import fetchData from "./fetch"
-import { scorePlaceholder } from "./variables";
+import fetchData from './fetch.js';
 
-  async function displayScore() {
-    scorePlaceholder.textContent = 'Loading...'
-    // 1. Execution 
-    const showScore = await fetchData();
-  }
+async function displayScore() {
+  // Execution
+  await fetchData();
+}
 
 export default displayScore;

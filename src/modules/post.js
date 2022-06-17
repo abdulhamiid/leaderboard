@@ -1,21 +1,18 @@
-import { baseUrl } from "./variables";
+import { baseUrl } from './variables.js';
 
-export class Data {
+class Data {
+  add(prop) {
+    this.prop = prop;
 
-  add (prop) {
     fetch(baseUrl, {
       method: 'POST',
-      body: JSON.stringify(prop),
+      body: JSON.stringify(this.prop),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
     })
-      .then((response) => response.json())
-      // .then((json) => console.log(json))
-  
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+      .then((response) => response.json());
   }
-  
 }
+
+export default Data;
