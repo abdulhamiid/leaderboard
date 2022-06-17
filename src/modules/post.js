@@ -1,7 +1,9 @@
+import { baseUrl } from "./variables";
+
 export class Data {
 
   add (prop) {
-    fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/JUUg16quXPBEL9Inuyon/scores/', {
+    fetch(baseUrl, {
       method: 'POST',
       body: JSON.stringify(prop),
       headers: {
@@ -9,7 +11,7 @@ export class Data {
       },
     })
       .then((response) => response.json())
-      .then((json) => console.log(json))
+      // .then((json) => console.log(json))
   
       .catch((error) => {
         console.error('Error:', error);

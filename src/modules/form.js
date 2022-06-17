@@ -1,4 +1,4 @@
-import { Data } from "./api";
+import { Data } from "./post";
 import refresh from "./refresh";
 import getUser from "./user";
 import { name, score } from "./variables";
