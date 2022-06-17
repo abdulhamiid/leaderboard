@@ -1,4 +1,7 @@
 import './style.css';
-import renderUi from './modules/add.js';
+import handleSubmit from './modules/form.js';
+import { form, refreshBtn } from './modules/variables.js';
+import displayScore from './modules/async.js';
 
-renderUi();
+refreshBtn.addEventListener('click', displayScore);
+form.addEventListener('submit', handleSubmit);
