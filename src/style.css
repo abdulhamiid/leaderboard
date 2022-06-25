@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 }
 
 body {
-  background-color:  teal;
+  background-color: teal;
   color: #000;
   font-family: 'M PLUS 1p', sans-serif;
 }
@@ -14,7 +15,7 @@ body {
 h1 {
   background-color: #000;
   color: #fff;
-  padding: 10px 20px
+  padding: 10px 20px;
 }
 
 #showcase h2 {
@@ -25,7 +26,7 @@ h1 {
 #form button {
   border: none;
   color: #fff;
-  font-size: 23ox;
+  font-size: 23px;
   border-radius: 8px;
   font-family: inherit;
 }
@@ -45,7 +46,7 @@ h1 {
 #showcase button:hover,
 #form button:hover {
   cursor: pointer;
-  transition: 0.7s;;
+  transition: 0.7s;
 }
 
 .container {
@@ -73,11 +74,13 @@ h1 {
   width: 100%;
   padding: 20px;
 }
+
 #showcase-title {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+
 #form input {
   font-family: inherit;
   padding: 10px 35px;
@@ -111,7 +114,7 @@ h1 {
 #form button[type="submit"] {
   width: 35%;
   padding: 15px 20px;
-  font-size: 18px;;
+  font-size: 18px;
   margin-left: 65%;
   margin-top: 20px;
   box-sizing: border-box;
@@ -123,6 +126,7 @@ h1 {
 #form button[type="submit"]:hover {
   opacity: 0.8;
 }
+
 li {
   list-style: none;
   padding: 20px 15px;
@@ -149,6 +153,7 @@ li:nth-child(even) {
 }
 
 /* scroll bar */
+
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
