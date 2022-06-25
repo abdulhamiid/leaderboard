@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +6,15 @@
 }
 
 body {
-  background-color: bisque;
-  font-family: cursive;
+  background-color:  teal;
+  color: #000;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 
-main {
-  margin: auto;
-  width: 95%;
+h1 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px
 }
 
 #showcase h2 {
@@ -20,20 +23,29 @@ main {
 
 #showcase button,
 #form button {
-  background-color: #fff;
-  border: solid 2px #000;
-  box-shadow: 2px 2px #000;
+  border: none;
+  color: #fff;
+  font-size: 23ox;
+  border-radius: 8px;
   font-family: inherit;
 }
 
 #showcase button {
+  padding: 15px 20px;
+  background-color: #555;
+  font-size: 16px;
   margin-left: 10px;
-  padding: 4px 10px;
+}
+
+#showcase button:hover {
+  background-color: rgb(184, 54, 54);
+  opacity: 1;
 }
 
 #showcase button:hover,
 #form button:hover {
   cursor: pointer;
+  transition: 0.7s;;
 }
 
 .container {
@@ -47,16 +59,45 @@ main {
 #form {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
   gap: 10px;
-  margin-top: 20px;
 }
 
+#form-header,
+#showcase-title {
+  background-color: #080a1f;
+  opacity: 0.5;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+#showcase-title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 #form input {
   font-family: inherit;
-  padding: 10px;
+  padding: 10px 35px;
+  border: none;
+  border-bottom: 1.2px solid #ccc;
   font-size: 16px;
-  border: 2px solid #000;
+}
+
+#form i {
+  position: absolute;
+}
+
+.icon {
+  padding: 13px;
+  min-width: 40px;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
 }
 
 #form input:focus {
@@ -69,26 +110,63 @@ main {
 
 #form button[type="submit"] {
   width: 35%;
-  flex-direction: row-reverse;
-  padding: 4px 10px;
+  padding: 15px 20px;
+  font-size: 18px;;
   margin-left: 65%;
+  margin-top: 20px;
   box-sizing: border-box;
+  background-color: #080a1f;
+  opacity: 0.5;
+  color: #fff;
 }
 
+#form button[type="submit"]:hover {
+  opacity: 0.8;
+}
 li {
   list-style: none;
-  padding: 5px;
-  background-color: #fff;
+  padding: 20px 15px;
+  color: #fff;
+  margin: 10px;
+  margin-left: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+li:hover {
+  color: #000;
 }
 
 ul {
-  width: 60%;
-  border: 2px solid #000;
+  width: 100%;
+  height: 58vh;
+  overflow: auto;
   margin-top: 20px;
 }
 
 li:nth-child(even) {
   background-color: #ccc;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media (max-width: 768px) {

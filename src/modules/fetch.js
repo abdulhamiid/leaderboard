@@ -1,4 +1,4 @@
-import { baseUrl, scorePlaceholder } from './variables.js';
+import { baseUrl, scorePlaceholder, resultCount } from './variables.js';
 
 const fetchData = () => {
   scorePlaceholder.innerHTML = '';
@@ -7,9 +7,18 @@ const fetchData = () => {
     .then((data) => {
       data.result.forEach((data) => {
         scorePlaceholder.innerHTML += `
-      <li>${data.user}: ${data.score}</li>`;
+      <li class="score" >${data.user}: ${data.score}</li>`;
+        document.querySelectorAll('.score').forEach(li => {
+          let R = Math.floor(Math.random() * 255);
+          let G = Math.floor(Math.random() * 255);
+          let B = Math.floor(Math.random() * 255);
+          let bg = 'rgb'+ '(' + R + ', ' + G + ', ' + B + ')'
+          li.style.backgroundColor = bg;
+        })
       });
+      resultCount.textContent = `(${data.result.length}) Players`
     });
 };
+fetchData()
 
 export default fetchData;
