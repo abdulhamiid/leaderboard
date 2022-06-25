@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <main>
     <h1>Leaderboard</h1>
     <div class="container">
       <div id="showcase">
+        <div id="showcase-title">
           <h2>Recent scores</h2>
+          <h3 id="result">  </h3>
           <button id="refresh">Refresh</button>
-          <ul id="scores"></ul>
+        </div>
+        <ul id="scores"></ul>
       </div>
       <div>
-        <h2>Add your score</h2>
+        <h2 id="form-header">Players Score</h2>
         <form action="" id="form">
-          <input type="text" placeholder="Your name" name="full-name" id="user-name">
-          <input type="number" placeholder="Your score" name="score" id="score">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Your name" minlength="5" maxlength="15" name="full-name" id="user-name" required>
+          <input type="number" placeholder="Your score" name="score" id="score" min="0" required>
           <button type="submit">Submit</button>
         </form>
       </div>
