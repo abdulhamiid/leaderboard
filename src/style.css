@@ -12,10 +12,37 @@ body {
   font-family: 'M PLUS 1p', sans-serif;
 }
 
-h1 {
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #000;
+  padding: 20px;
   color: #fff;
-  padding: 10px 20px;
+  align-items: center;
+}
+
+#logo {
+  width: 80px;
+  height: 40px;
+}
+#nav-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+a {
+  color: #fff;
+  position: relative;
+  right: 0;
+}
+
+h1 {
+  color: #fff;
+  letter-spacing: 4px;
 }
 
 #showcase h2 {
@@ -51,7 +78,7 @@ h1 {
 
 .container {
   width: 80%;
-  margin: 40px auto auto auto;
+  margin: 100px auto auto auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -175,32 +202,7 @@ li:nth-child(even) {
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 95%;
-    margin: auto;
-    grid-template-columns: 1fr;
-    position: relative;
-  }
-
-  #showcase {
-    position: relative;
-    margin-top: 240px;
-    text-align: center;
-  }
-
-  main div:nth-child(2) {
-    position: absolute;
-    width: 95%;
-    margin: auto;
-  }
-
-  #form,
-  ul {
-    width: 100%;
-  }
-
-  h1 {
-    margin: 20px auto;
-    text-align: center;
+  body {
+    display:none;
   }
 }
