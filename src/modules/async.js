@@ -1,4 +1,4 @@
-import fetchData from './fetch.js';
+import { fetchData } from './fetch.js';
 
 const displayScore = async () => {
   // Execution
