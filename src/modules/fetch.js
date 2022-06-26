@@ -24,6 +24,7 @@ const fetchData = () => {
       resultCount.textContent = `(${data.result.length}) Players`;
     });
 };
+fetchData();
 
 const filter = () => {
   const filterValue = search.value.toUpperCase();
