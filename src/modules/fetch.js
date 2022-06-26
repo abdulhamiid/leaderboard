@@ -1,4 +1,5 @@
 import { baseUrl, scorePlaceholder, resultCount } from './variables.js';
+let names = [];
 
 const fetchData = () => {
   scorePlaceholder.innerHTML = '';
@@ -16,9 +17,10 @@ const fetchData = () => {
           li.style.backgroundColor = bg;
         });
       });
+      names = scorePlaceholder.querySelectorAll('li')
       resultCount.textContent = `(${data.result.length}) Players`;
     });
 };
 fetchData();
 
-export default fetchData;
+export { names, fetchData };
