@@ -133,6 +133,7 @@ h1 {
   padding: 13px;
   min-width: 40px;
   color: #333;
+  opacity: 0.6;
 }
 
 #message {
@@ -174,10 +175,6 @@ h1 {
 
 #form input:focus {
   outline: none;
-}
-
-#form input::placeholder {
-  color: #000;
 }
 
 #form button[type="submit"] {

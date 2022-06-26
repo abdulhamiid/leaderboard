@@ -4,24 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 <body>
   <main>
-    <h1>Leaderboard</h1>
-    <div class="container">
-      <div id="showcase">
-          <h2>Recent scores</h2>
-          <button id="refresh">Refresh</button>
-          <ul id="scores"></ul>
+    <nav>
+      <div id="nav-header">
+        <img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/Beijing-Olympic-medals-013122-Getty-FTR.jpg?itok=j0IAWute'" id="logo" alt="logo">
+        <h1>LEADERBOARD</h1>
       </div>
-      <div>
-        <h2>Add your score</h2>
+      <input type="text" minlength="5" maxlength="15" id="search" placeholder="Search">
+      <a href="https://github.com/abdulhamiid/leaderboard" target="_blank">View source</a>
+    </nav>
+    <div class="container">
+      <section id="showcase">
+        <div id="showcase-title">
+          <h2>Recent scores</h2>
+          <h3 id="result">  </h3>
+          <button id="refresh">Refresh</button>
+        </div>
+        <ul id="scores"></ul>
+      </section>
+      <section>
+        <h2 id="form-header">Players Score</h2>
         <form action="" id="form">
-          <input type="text" placeholder="Your name" name="full-name" id="user-name">
-          <input type="number" placeholder="Your score" name="score" id="score">
+          <i class="fa fa-user icon"></i>
+          <input class="input-field" type="text" placeholder="Your name" minlength="5" maxlength="15" name="full-name" id="user-name" required>
+          <input type="number" placeholder="Your score" name="score" id="score" min="0" required>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </section>
+    </div>
+    <div id="social-media">
+      <a href="https://www.linkedin.com/in/abdulhamid-adio-b0b343223" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="twitter">
+      </a>
+      <a href="https://twitter.com/abdulhamid_adio" target="_blank">
+        <img src="https://www.pngitem.com/pimgs/m/0-4834_twitter-logo-round-edges-hd-png-download.png" alt="twitter">
+      </a>
+      <a href="https://github.com/abdulhamiid" target="_blank">
+        <img src="https://marenvernon.com/img/icon-github.png" alt="twitter">
+      </a>
     </div>
   </main>
 </body>
