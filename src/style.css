@@ -28,6 +28,7 @@ nav {
   width: 80px;
   height: 40px;
 }
+
 #nav-header {
   display: flex;
   align-items: center;
@@ -203,6 +204,6 @@ li:nth-child(even) {
 
 @media (max-width: 768px) {
   body {
-    display:none;
+    display: none;
   }
 }
