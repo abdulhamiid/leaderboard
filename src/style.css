@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -109,8 +109,8 @@ h1 {
   color: #fff;
   width: 100%;
   padding: 20px;
-}
-/* 
+} */
+
 #showcase-title {
   display: flex;
   gap: 20px;
@@ -210,7 +210,7 @@ ul {
   height: 58vh;
   overflow: auto;
   margin-top: 20px;
-} */
+}
 
 /* scroll bar */
 
