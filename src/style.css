@@ -201,10 +201,3 @@ li:nth-child(even) {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-@media (max-width: 768px) {
-  body {
-    background-color: red;
-    display: none;
-  }
-}
