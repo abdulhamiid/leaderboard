@@ -212,10 +212,6 @@ ul {
   margin-top: 20px;
 }
 
-li:nth-child(even) {
-  background-color: #ccc;
-}
-
 /* scroll bar */
 
 /* width */
