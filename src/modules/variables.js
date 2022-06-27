@@ -1,6 +1,6 @@
 const scorePlaceholder = document.querySelector('#scores');
 const form = document.querySelector('#form');
-const name = document.querySelector('input[type="text"]');
+const name = document.querySelector('#user-name');
 const score = document.querySelector('input[type="number"]');
 const search = document.querySelector('#search');
 const refreshBtn = document.querySelector('#refresh');
