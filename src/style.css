@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 
-/*
 * {
   margin: 0;
   padding: 0;
@@ -133,7 +132,7 @@ h1 {
 .icon {
   padding: 13px;
   min-width: 40px;
-  color: #333;
+  color: #555;
 }
 
 #message {
@@ -178,7 +177,7 @@ h1 {
 }
 
 #form input::placeholder {
-  color: #000;
+  color: #555;
 }
 
 #form button[type="submit"] {
@@ -244,8 +243,8 @@ li:nth-child(even) {
   background: #555;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     display: none;
   }
-}  */
+}
