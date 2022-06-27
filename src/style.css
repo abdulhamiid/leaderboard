@@ -24,9 +24,16 @@ nav {
   align-items: center;
 }
 
+#search {
+  padding: 4px 15px;
+  font-family: inherit;
+  font-size: 15px;
+  width: 20%;
+}
+
 #logo {
   width: 80px;
-  height: 40px;
+  height: 43px;
 }
 
 #nav-header {
@@ -61,7 +68,8 @@ h1 {
 
 #showcase button {
   padding: 15px 20px;
-  background-color: #555;
+  color: #000;
+  background-color: #fff;
   font-size: 16px;
   margin-left: 10px;
 }
@@ -91,13 +99,13 @@ h1 {
   background-color: #fff;
   width: 100%;
   padding: 30px;
+  position: relative;
   gap: 10px;
 }
 
 #form-header,
 #showcase-title {
   background-color: #080a1f;
-  opacity: 0.5;
   color: #fff;
   width: 100%;
   padding: 20px;
@@ -124,7 +132,40 @@ h1 {
 .icon {
   padding: 13px;
   min-width: 40px;
-  color: #333;
+  color: #555;
+}
+
+#message {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 50%;
+  background-color: rgb(99, 245, 107);
+  color: #000;
+  font-weight: 400;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+#social-media {
+  background-color: #fff;
+  padding: 4px;
+  position: fixed;
+  left: 0;
+  top: 200px;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}
+
+#social-media img {
+  width: 40px;
+  height: 40px;
+}
+
+#social-media img:hover {
+  transform: scale(0.9);
 }
 
 .input-field {
@@ -136,7 +177,7 @@ h1 {
 }
 
 #form input::placeholder {
-  color: #000;
+  color: #555;
 }
 
 #form button[type="submit"] {
@@ -147,12 +188,7 @@ h1 {
   margin-top: 20px;
   box-sizing: border-box;
   background-color: #080a1f;
-  opacity: 0.5;
   color: #fff;
-}
-
-#form button[type="submit"]:hover {
-  opacity: 0.8;
 }
 
 li {
@@ -176,10 +212,6 @@ ul {
   margin-top: 20px;
 }
 
-li:nth-child(even) {
-  background-color: #ccc;
-}
-
 /* scroll bar */
 
 /* width */
@@ -200,10 +232,4 @@ li:nth-child(even) {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-@media (max-width: 768px) {
-  body {
-    display: none;
-  }
 }
