@@ -204,6 +204,7 @@ li:nth-child(even) {
 
 @media (max-width: 768px) {
   body {
+    background-color: red;
     display: none;
   }
 }
