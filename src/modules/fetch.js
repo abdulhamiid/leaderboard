@@ -13,11 +13,11 @@ const fetchData = () => {
         scorePlaceholder.innerHTML += `
       <li class="score" >${data.user}: ${data.score}</li>`;
         document.querySelectorAll('.score').forEach((li) => {
-          // const R = Math.floor(Math.random() * 90 + 55);
-          // const G = Math.floor(Math.random() * 90 + 55);
-          // const B = Math.floor(Math.random() * 90 + 55);
-          // const bg = `rgb(${R}, ${G}, ${B})`;
-          // li.style.backgroundColor = bg;
+          const R = Math.floor(Math.random() * 255);
+          const G = Math.floor(Math.random() * 244);
+          const B = Math.floor(Math.random() * 100);
+          const bg = `rgb(${R}, ${G}, ${B})`;
+          li.style.backgroundColor = bg;
         });
       });
       names = scorePlaceholder.querySelectorAll('li');
