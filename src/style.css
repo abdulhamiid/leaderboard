@@ -233,9 +233,3 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
-@media (max-width: 768px) {
-  body {
-    display: none;
-  }
-}
