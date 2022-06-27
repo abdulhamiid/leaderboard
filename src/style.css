@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 
+/*
 * {
   margin: 0;
   padding: 0;
@@ -243,8 +244,8 @@ li:nth-child(even) {
   background: #555;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
     display: none;
   }
-}
+}  */
