@@ -315,4 +315,14 @@ ul {
     font-size: 15px;
   }  
   
+  ul {
+    width: 100%;
+    height: fit-content;
+    overflow: visible;
+  }
+
+  li {
+    margin: 10px 0;
+    font-size: 15px;
+  }
 }
