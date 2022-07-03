@@ -256,5 +256,12 @@ ul {
     position: fixed;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 120px;
+    width: 95%;
+  }
+ 
   
 }
