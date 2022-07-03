@@ -263,5 +263,25 @@ ul {
     width: 95%;
   }
  
+  #form-header {
+    padding: 8px 12px;
+  }
+
+  #form {
+    padding: 15px;
+  }
+
+  #form input {
+    font-size: 15px;
+  }
+
+  #form button[type="submit"] {
+    padding: 8px 4px;
+    width: 80px;
+    position: relative;
+    margin-top: 0;
+    border-radius: 5px;
+    font-size: 15px;
+  }
   
 }
