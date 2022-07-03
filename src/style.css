@@ -24,11 +24,18 @@ nav {
   align-items: center;
 }
 
+#menu {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #search {
   padding: 4px 15px;
   font-family: inherit;
   font-size: 15px;
-  width: 20%;
+  width: 35%;
 }
 
 #logo {
@@ -57,7 +64,7 @@ h1 {
   display: inline;
 }
 
-#showcase button,
+#refresh,
 #form button {
   border: none;
   color: #fff;
@@ -66,7 +73,7 @@ h1 {
   font-family: inherit;
 }
 
-#showcase button {
+#refresh {
   padding: 15px 20px;
   color: #000;
   background-color: #fff;
@@ -113,6 +120,7 @@ h1 {
 
 #showcase-title {
   display: flex;
+  justify-content: space-between;
   gap: 20px;
   align-items: center;
 }
@@ -122,7 +130,7 @@ h1 {
   padding: 10px 35px;
   border: none;
   border-bottom: 1.2px solid #ccc;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 #form i {
@@ -181,12 +189,13 @@ h1 {
 }
 
 #form button[type="submit"] {
-  width: 35%;
   padding: 15px 20px;
+  width: 150px;
   font-size: 18px;
-  margin-left: 65%;
   margin-top: 20px;
   box-sizing: border-box;
+  position: relative;
+  margin-left: 70%;
   background-color: #080a1f;
   color: #fff;
 }
@@ -195,6 +204,7 @@ li {
   list-style: none;
   padding: 20px 15px;
   color: #fff;
+  font-size: 17px;
   margin: 10px;
   margin-left: 0;
   border-radius: 4px;
@@ -232,4 +242,96 @@ ul {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  h3 {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  nav {
+    padding: 15px 10px;
+    z-index: 2;
+    gap: 20px;
+    position: fixed;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 120px;
+    width: 95%;
+  }
+
+  #form-header {
+    padding: 8px 12px;
+  }
+
+  #form {
+    padding: 15px;
+  }
+
+  #form input {
+    font-size: 15px;
+  }
+
+  #form button[type="submit"] {
+    padding: 8px 4px;
+    width: 80px;
+    position: relative;
+    margin-top: 0;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  #logo {
+    width: 40px;
+    height: 22px;
+  }
+
+  #search {
+    width: 100%;
+    padding: 5px;
+  }
+
+  #menu a {
+    display: none;
+  }
+
+  #social-media {
+    display: none;
+  }
+
+  #showcase-title {
+    gap: 5px;
+    padding: 8px;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+
+  #refresh {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+
+  ul {
+    width: 100%;
+    overflow: visible;
+  }
+
+  li {
+    margin: 10px 0;
+    font-size: 15px;
+  }
 }
