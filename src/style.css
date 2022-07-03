@@ -283,5 +283,19 @@ ul {
     border-radius: 5px;
     font-size: 15px;
   }
-  
+
+  #logo {
+    width: 60px;
+    height: 30px;
+  }
+
+  #search {
+    width: 100%;
+    padding: 5px;
+  }
+
+  #menu a {
+    display: none;
+  }
+
 }
