@@ -246,7 +246,17 @@ ul {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 20px;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  h3 {
+    font-size: 13px;
+    letter-spacing: 2px;
   }
 
   nav {
@@ -262,7 +272,7 @@ ul {
     margin-top: 120px;
     width: 95%;
   }
- 
+
   #form-header {
     padding: 8px 12px;
   }
@@ -285,8 +295,8 @@ ul {
   }
 
   #logo {
-    width: 60px;
-    height: 30px;
+    width: 40px;
+    height: 22px;
   }
 
   #search {
@@ -313,11 +323,10 @@ ul {
     padding: 10px;
     border-radius: 4px;
     font-size: 15px;
-  }  
-  
+  }
+
   ul {
     width: 100%;
-    height: fit-content;
     overflow: visible;
   }
 
