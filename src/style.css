@@ -302,5 +302,17 @@ ul {
     display: none;
   }
 
+  #showcase-title {
+    gap: 5px;
+    padding: 8px;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+
+  #refresh {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+  }  
   
 }
