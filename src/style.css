@@ -189,13 +189,12 @@ h1 {
 }
 
 #form button[type="submit"] {
-  padding: 15px 20px;
-  width: 150px;
+  display: flex;
+  margin-left: auto;
+  padding: 15px 25px;
   font-size: 18px;
   margin-top: 20px;
   box-sizing: border-box;
-  position: relative;
-  margin-left: 70%;
   background-color: #080a1f;
   color: #fff;
 }
@@ -286,9 +285,9 @@ ul {
   }
 
   #form button[type="submit"] {
-    padding: 8px 4px;
-    width: 80px;
-    position: relative;
+    padding: 8px 16px;
+    display: flex;
+    margin-left: auto;
     margin-top: 0;
     border-radius: 5px;
     font-size: 15px;
