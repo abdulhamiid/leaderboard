@@ -13,7 +13,9 @@
 - ES6
 - Webpack
 
-
+## Screenshots
+![screenshot](./img/home.PNG)
+![screenshot](./img/mobile.PNG)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
