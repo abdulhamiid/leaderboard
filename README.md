@@ -33,7 +33,7 @@ cd leaderboard
 
 ### Live Demo 
 
-[Link here](https://https://62ef53a58e24d65022d94f6f--calm-cobbler-22d6b9.netlify.app/)
+[Link here](https://calm-cobbler-22d6b9.netlify.app/)
 
 ## This project is built with webpack 
 
