@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Leaderboard App
 
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved in Leaderboard API service.
@@ -8,14 +6,18 @@
 ## Built With
 
 - HTML
-- CSS 
-- JavaScript
-- ES6
+- JavaScript (ES6+)
+- CSS
 - Webpack
 
 ## Screenshots
 ![screenshot](./img/home.PNG)
 ![screenshot](./img/mobile.PNG)
+
+### Live Demo 
+
+🔥 [Link](https://abdulhamiid.github.io/leaderboard) 🔥
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -23,54 +25,34 @@ To get a local copy up and running follow these simple example steps.
 ### Clone this repository
 
 ```
-https://github.com/abdulhamiid/leaderboard.git
+git clone https://github.com/abdulhamiid/leaderboard.git
 ```
-
-### Live Demo 
-
-[Link here](https://abdulhamiid.github.io/leaderboard)
 
 ## This project is built with webpack 
 
-- To work on this Repository Locally you need to run some command for basic Installation.
-***NOTE: The minimum supported Node.js version to run webpack 5 is 10.13.0 (LTS)***
-- Click Here for node Installation - [node](https://nodejs.org/en/download/) 
-
-## Basic Setup
-
-### Let's run npx webpack, which will take our script at src/index.js as the entry point, and will generate dist/main.js as the output.
-
-```npx webpack```<br/>
-```npx webpack --config webpack.config.js```<br/>
-```npm run build```<br/>
+### Prerequisites
 
 
-## Setting up HtmlWebpackPlugin
-### First install the plugin and adjust the webpack.config.js file:
+- Node.js
+- npm
+
+- cd into the project directory
+```terminal
+cd leaderboard
 ```
-npm install --save-dev html-webpack-plugin
-```
+- Once you've cloned the repo and are inside the directory, run `npm install` 
+command to get all necessary installations.
 
-### Loading CSS
-```
-npm install --save-dev style-loader css-loader
-```
+- **Yep, that's it!** you are now all set and simply run `npm start` to get your clone up and running on the browser.
 
-## Development
-### Using webpack-dev-server
-```npm install --save-dev webpack-dev-server```
-
-### Deployment
-
-Run ```npm start```
 
 ## Author
 
 👤 **Abdulhamid**
 
-- GitHub: [@githubhandle](https://github.com/abdulhamiid)
-- Twitter: [@twitterhandle](https://twitter.com/abdulhamid_adio)
-- LinkedIn: [LinkedIn](https://linkedin.com/)
+- GitHub: [abdulhamiid](https://github.com/abdulhamiid)
+- Twitter: [@abdulhamid_adio](https://twitter.com/abdulhamid_adio)
+- LinkedIn: [Adio Abdulhamid](https://linkedin.com/)
 
 ## 🤝 Contributing
 
