@@ -7,37 +7,41 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
 <body>
-  <main>
-    <nav>
-      <div id="nav-header">
-        <img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/Beijing-Olympic-medals-013122-Getty-FTR.jpg?itok=j0IAWute'" id="logo" alt="logo">
-        <h1>LEADERBOARD</h1>
+  <!-- navbar -->
+  <nav class="flex">
+    <header id="nav-header" class="flex">
+      <img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/Beijing-Olympic-medals-013122-Getty-FTR.jpg?itok=j0IAWute'" id="logo" alt="logo">
+      <h1>LEADERBOARD</h1>
+    </header>
+    <span id="menu" class="flex">
+      <input type="text" minlength="5" maxlength="15" id="search" placeholder="Search">
+      <a href="https://github.com/abdulhamiid/leaderboard" target="_blank">View source</a>
+    </span>
+  </nav>
+  
+  <!-- main content -->
+  <main class="container flex">
+    <div id="showcase">
+      <div id="showcase-title" class="flex">
+        <h2>Recent scores</h2>
+        <h3 id="result"></h3>
+        <button id="refresh">Refresh</button>
       </div>
-      <span id="menu">
-        <input type="text" minlength="5" maxlength="15" id="search" placeholder="Search">
-        <a href="https://github.com/abdulhamiid/leaderboard" target="_blank">View source</a>
-      </span>
-    </nav>
-    <div class="container">
-      <section id="showcase">
-        <div id="showcase-title">
-          <h2>Recent scores</h2>
-          <h3 id="result"></h3>
-          <button id="refresh">Refresh</button>
-        </div>
-        <ul id="scores"></ul>
-      </section>
-      <section>
-        <h2 id="form-header">Players Score</h2>
-        <form action="" id="form">
-          <i class="fa fa-user icon"></i>
-          <input class="input-field" id="user-name" type="text" placeholder="Your name" minlength="5" maxlength="15" name="full-name" id="user-name" required>
-          <input type="number" placeholder="Your score" name="score" id="score" min="0" required>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+      <ul id="scores"></ul>
     </div>
-    <div id="social-media">
+
+    <div>
+      <h2 id="form-header">Players Score</h2>
+      <form action="" id="form" class="flex flex-column">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" id="user-name" type="text" placeholder="Your name" minlength="5" maxlength="15" name="full-name" id="user-name" required>
+        <input type="number" placeholder="Your score" name="score" id="score" min="0" required>
+        <button type="submit" class="flex">Submit</button>
+      </form>
+    </div>
+
+    <!-- social media links -->
+    <aside id="social-media" class="flex flex-column">
       <a href="https://www.linkedin.com/in/abdulhamid-adio-b0b343223" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="twitter">
       </a>
@@ -47,7 +51,7 @@
       <a href="https://github.com/abdulhamiid" target="_blank">
         <img src="https://marenvernon.com/img/icon-github.png" alt="twitter">
       </a>
-    </div>
+    </aside>
   </main>
 </body>
 </html>
