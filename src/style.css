@@ -101,9 +101,12 @@ h1 {
 .container {
   width: 80%;
   margin: 100px auto auto auto;
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+
+.container > div {
+  width: 100%;
 }
 
 #form {
@@ -124,11 +127,13 @@ h1 {
 
 #showcase-title {
   justify-content: space-between;
+  color: #fff;
   gap: 20px;
 }
 
 #form input {
   font-family: inherit;
+  width: 100%;
   padding: 10px 35px;
   border: none;
   border-bottom: 1.2px solid #ccc;
@@ -137,6 +142,8 @@ h1 {
 
 #form i {
   position: absolute;
+  top: 30px;
+  left: 20px;
 }
 
 .icon {
@@ -198,8 +205,14 @@ h1 {
   color: #fff;
 }
 
+#form-header {
+  height: 60px;
+  color: #fff;
+}
+
 li {
   list-style: none;
+  text-align: left;
   padding: 20px 15px;
   color: #fff;
   font-size: 17px;
@@ -270,12 +283,13 @@ ul {
     width: 95%;
   }
 
-  #form-header {
-    padding: 8px 12px;
-  }
-
   #form {
     padding: 15px;
+  }
+
+  #form i {
+    top: 15px;
+    left: 17px;
   }
 
   #form input {
