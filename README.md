@@ -36,7 +36,7 @@ git clone https://github.com/abdulhamiid/leaderboard.git
 - Node.js
 - npm
 
-- cd into the project directory
+navigate into the project directory
 ```terminal
 cd leaderboard
 ```
